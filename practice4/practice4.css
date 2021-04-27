@@ -1,0 +1,48 @@
+
+body{
+    margin: 0;
+    background-color: rgb(241, 180, 180);
+}
+*{
+    box-sizing: border-box;
+}
+.container{
+    width: 50%;
+    margin:20vh auto;
+}
+.button {
+    background-color: #eee;
+    color: rgb(53, 51, 51);
+    font-size: 15px;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.5s ease-in;
+  }
+  
+  .active, .button:hover {
+    background-color: #ccc;
+  }
+  
+  .button:after {
+    content: '\002B'; 
+    font-weight: bold;
+    color:  #777;
+    float: right;
+    margin-left: 5px;
+  }
+  
+  .active:after {
+    content: '\2212';
+  }
+
+  .text {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+  }
