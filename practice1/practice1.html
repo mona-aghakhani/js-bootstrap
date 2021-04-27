@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="practice1.css">
+</head>
+<body>
+    <div id="info">
+        <p id="register"></p>
+        <p id="show-name"></p>
+        <p id="show-lname"></p>
+        <p id="show-email"></p>   
+        <p id="show-phone"></p>
+    </div>
+    <div id="container">
+        <form action="#" id="form" onSubmit="return checkform()" >
+                <!-- onSubmit="return checkform()" -->
+            
+            <lable>First Name</lable>
+            <input id="first-name" placeholder="Your name.." >
+            
+            <lable>Last Name</lable>
+            <input id="last-name" placeholder="Your last name.." >
+            
+            <label>Country</lable>
+            <select name="country" id="country">
+                <option value="Australia">Australia</option>
+                <option value="Iran">Iran</option>
+                <option value="Canada">Canada</option>
+                <option value="Netherland">Netherland</option>
+            </select>
+            
+            <label >Email</label>
+            <input  name="email" id="email"  placeholder="Your Email.."   >
+            <!-- onkeyup="validationEmail()" -->
+            <div id="errorEmail"></div>
+            
+            <label >Phone Number</label>
+            <input  name="number" id="phone" placeholder="Your Phone Number.."  >
+            <!-- onkeyup=" validationPhone()" -->
+            <div id="errorPhone"></div>
+            
+            <lable>Subject</lable>
+            <textarea type="text" placeholder="Write somthing.." name="subject" ></textarea>
+            <input type="submit" name="submit" id="submit"  >
+        </form>
+    </div>
+</body>
+<script src="practice1.js"></script>
+</html>
